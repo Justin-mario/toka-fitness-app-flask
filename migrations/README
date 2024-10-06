@@ -1,1 +1,30 @@
-Single-database configuration for Flask.
+toka-fitness-app-flask
+This is a simple fitness application built with Flask.
+
+Setup Instructions
+Clone the repository:
+
+git clone <repository-url>
+cd <project-directory>
+Set up a virtual environment:
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Install dependencies:
+
+pip install -r requirements.txt
+Initialize the database:
+
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+Run the application:
+
+python run.py
+Access the application at http://localhost:5000
+
+Features
+User registration
+[List other features]
+API Documentation
+API documentation is available at /swagger when the application is running.
